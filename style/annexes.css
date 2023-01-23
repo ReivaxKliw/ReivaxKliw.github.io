@@ -1,0 +1,159 @@
+
+/* *********************NAVBAR******************** */
+header nav {
+    overflow:hidden;
+    background-color: #336b87 ;
+    position: fixed;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+}
+header li {
+    float: right;
+    font-size: 1,2em;
+}
+header li a{
+    text-decoration: none;
+	color: black;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+}
+#logo {
+    font-family: 'roboto', cursive;
+    font-weight: bold;
+    float: left;
+}
+/* ********************fond************* */
+body {
+    display: block;
+    margin: 0px 10px 0px 10px;
+}
+#imagePrincipale {
+    padding-top: 70px;
+    background-size: cover;
+    background-color:rgb(185, 184, 184); 
+    max-height: 3000px;
+    }
+/* ********************corps du site************* */
+#formulaire1 {
+border : 5px solid black;
+border-radius: 10px;
+padding: 10px 0px 10px 0px;
+}
+
+p {
+    color : red;
+    }
+h2{
+        color :green;
+        padding: 10px;
+        border : 5px solid black;
+        border-radius: 10px;
+    }
+h3{
+    color: black;
+    margin: 10px 25px;
+}
+.questionProject{
+        padding: 10px 0px 10px 0px;
+    }
+.titre1 {
+        color: black;
+        font-size: 16px;
+    }
+.button{
+    text-align:  center;
+    padding-top: 10px;
+}
+.button1{
+    text-align:  left;
+    padding-top: 10px;
+}
+.button2{
+    text-align:  center;
+    padding-top: 10px;
+}
+.textResult{
+    color:black;
+    text-align: center;
+  }
+  /* ul {
+	font-size: 15px;
+	list-style: square;
+  } */
+  .textCout{
+    color : red;
+    border :5px solid;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  @keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+	24% {
+		opacity: 1;
+	}
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+	100% {
+        animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+/* ********************tableau de décomposition des prix************* */
+    
+    table {
+        width: 60%;
+        border: 3px solid  #336b87;
+        border-collapse: collapse;
+    }
+    thead th {
+        background-color:#336b87;
+    }
+    tbody td:nth-child(1) {
+        width: 55%;
+    }
+    tbody td:nth-child(2) {
+        width: 30%;
+        text-align: right;
+    }
+    tbody td:nth-child(3) {
+        width: 15%;
+    }
+    th, td {
+        border: thin solid black;
+        padding: 5px;
+    }
+    tfoot td {
+        background-color: rgb(232, 115, 115);
+        border-collapse : collapse;
+    }
+    tfoot td:nth-child(2) {
+        text-align: right;
+    }
+    
+    

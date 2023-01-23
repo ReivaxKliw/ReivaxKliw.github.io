@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="\style\annexes.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="logo"><a href="#">AMO : le site des maîtres d'ouvrage</a>  </li>
+                <li><a href="#contact">Nous contacter</a>  </li>
+                <li><a href="#s'identifier">s'identifier</a>  </li>
+            </ul>
+        </nav>
+    </header>
+      
+<section id="imagePrincipale">
+    <p>Vous devez à ce stade pour pouvoir effectuer une décomposition de prix, avoir les plans de votre projet et que celui-ci est fait l'objet d'une remise de prix tout corps d'état. La réponse aux questions ci-dessous vous permettra alors de décomposer le prix général corps d'état par corps d'état et d'en ressortir les quotes parts des marges et taxes. Plus les réponses seront précises plus la décomposition de prix sera juste.</p>
+    <p>La décomposition de prix ne concerne que le clos et couvert. Dans votre prix vous devez exclure les éléments hors immobilier : sprinckler, machines, meubles, ...</p>
+<!____________________________________________________
+ PRIX DE VENTE>
+ <h2> Le prix de vente</h2>
+    <label for="inputSellingPrice">Quelle est le <b>prix de vente de votre projet</b>?</label>
+    <input type="text" placeholder="prix en euros" id="inputSellingPrice"> euros HT <br>
+    <br>
+<! ____________________________________________________
+Questions du TERRAIN>
+<h2> Le terrain</h2>
+    <label for="choiceGroundOwner">L'offre comprend elle l'acquisition du terrain ?</label>
+    <select id="choiceGroundOwner">
+        <option value="yes"> oui</option>
+        <option value="no"> non</option>
+    </select> <br>
+    <br>
+    <label for="choiceCostGround">Le cas échéant, connaissez-vous le <b>coût de votre terrain au euros/m²</b>?</label>
+    <select id="choiceCostGround">
+        <option value="yes"> oui</option>
+        <option value="no"> non</option>
+    </select>
+    <label for="inputCostGround">Si oui, quel est ce coût? </label>
+    <input type="text" placeholder="prix en euros" id="inputCostGround"> euros/m² HT <br>
+    <br>
+    <label for="choiceAreaGround">Connaissez-vous la <b>surface de terrain</b> qu'occupe votre bâtiment ?</label>
+    <select id="choiceAreaGround">
+        <option value="yes"> oui</option>
+        <option value="no"> non</option>
+    </select>
+    <label for="inputAreaGround">Si oui, quelle est la <b>surface de votre terrain</b>?</label>
+    <input type="text" placeholder="surface en m²" id="inputAreaGround"> m² <br>
+    <br>
+    <label for="choiceAreaRoadAndUtilities">Connaissez-vous la <b>surface de voirie</b> de votre bâtiment ? (cas de bâtiment situé dans une zone commune)</label>
+    <select id="choiceAreaRoadAndUtilities">
+        <option value="yes"> oui</option>
+        <option value="no"> non</option>
+    </select>
+    <label for="inputAreaRoadAndUtilities">Quelle est la <b>surface de voirie (bitume)</b>?</label>
+    <input type="text" placeholder="surface en m²" id="inputAreaRoadAndUtilities"> m² <br>
+    <br>
+<!____________________________________________________
+questions HALL>
+<h2> Le hall </h2>
+    <label for="inputAreaBox">Quelle est la <b>surface de la boîte/hall de stockage/production</b> ? (c'est à dire le plus grand bâtiment même si les bureaux sont à l'intérieur)</label>
+    <input type="text" placeholder="surface en m²" id="inputAreaBox"> m² <br>
+    <p>Dans un monde idéal, votre bâtiment est rectangulaire si ce n'est pas le cas, ne remplissez pas les questions concernant les longueur et largeur</p>
+    <label for="inputLengthHall">Quelle est la <b>longeur du hall de stockage/production</b> ?</label>
+    <input type="text" placeholder="longueur en m" id="inputLengthHall"> m <br>
+    <br>
+    <label for="inputWidthHall">Quelle est la <b>largeur du hall de stockage/production</b> ?</label>
+    <input type="text" placeholder="longueur en m" id="inputWidthHall"> m <br>
+    <br>
+    <label for="inputHeightHall">Quelle est la <b>hauteur totale extérieure du hall de stockage/production</b> ?</label>
+    <input type="text" placeholder="hauteur totale en m" id="inputHeightHall"> m <br>
+    <br>
+<! ____________________________________________________
+ Questions BUREAUX>
+ <h2> Les bureaux</h2> 
+    <!INTERIEUR__________________________________________>
+<br>
+<h3><label for="officeInside">Il y a des bureaux réalisés dans le volume du Hall? ( insérer image)</label> 
+    <select id="choiceOfficesInside">
+    <option value="no"> non</option>
+    <option value="yes"> oui</option>
+    </select></h3>
+    <br>
+        <label for="inputAreaOfficesGroundInside">Quelle est la <b>surface Rez de chaussée des bureaux</b> de votre projet ?</label>
+        <input type="text" placeholder="surface en m²" id="inputAreaOfficesGroundInside"> m²
+        <br>
+        <label for="inputAreaOfficesFloorInside">Les bureaux possédent-ils un étage ? <br> Si oui, indiquez la surface:</label>
+        <input type="text" id="inputAreaOfficesFloorInside" name="storage" placeholder="indiquez la surface" > m <br>
+        <p>Quelles-sont les dimensions de vos bureaux ? si vous ne les connaissez pas passez cette question</p>
+        <label for="inputLengthOfficesInside">Quelle est la <b>longeur au rez de chaussée des Bureaux</b> ?</label>
+        <input type="text" placeholder="longueur en m" id="inputLengthOfficesInside"> m
+        <label for="inputWidthOfficesInside">Quelle est la <b>largeur au rez de chaussée des bureaux</b> ?</label>
+        <input type="text" placeholder="longueur en m" id="inputWidthOfficesInside"> m 
+        <br>
+        <br>
+
+    <! bureaux à l'extérieur__________________________________________ >
+    <h3><label for="officeOutside">Il y a des bureaux à l'extérieur du Hall ? (insérer image)</label> 
+    <select id="choiceOfficesOutside">
+    <option value="no"> non</option>
+    <option value="yes"> oui</option>
+    </select></h3>
+    <br>
+        <!--<input type="radio" id="choiceOfficesOutside" name="q2" value="outside">
+        <label for="choiceOfficesOutside"><b>A l'extérieur</b></label><br>
+        <br> -->
+        <label for="inputAreaOfficesGroundOutside">Quelle est la <b>surface Rez de chaussée des bureaux</b> de votre projet ?</label>
+        <input type="text" placeholder="surface en m²" id="inputAreaOfficesGroundOutside"> m²
+        <br>
+        <label for="inputAreaOfficesFloorOutside">Les bureaux possédent-ils un étage ? <br> Si oui, indiquez la surface:</label>
+        <input type="text" id="inputAreaOfficesFloorOutside" name="storage" placeholder="indiquez la surface" > m <br>
+        <p>Quelles-sont les dimensions de vos bureaux ? si vous ne les connaissez pas passez cette question</p>
+        <label for="inputLengthOfficesOutside">Quelle est la <b>longeur au rez de chaussée des Bureaux</b> ?</label>
+        <input type="text" placeholder="longueur en m" id="inputLengthOfficesOutside"> m
+        <label for="inputWidthOfficesOutside">Quelle est la <b>largeur au rez de chaussée des bureaux</b> ?</label>
+        <input type="text" placeholder="longueur en m" id="inputWidthOfficesOutside"> m
+        <br>
+    <! le type de chauffage__________________________________________ >
+    <h3>Le type de chauffage des bureaux</h3>
+        <label for="heating">Sélectionnez le type de chauffage installé dans les bureaux ?:</label>
+        <select id="selectHeatingOffices">
+        <option value="airConditioner"> climatisation réversible</option>
+        <option value="hotWaterHeating"> radiateur Eau Chaude</option>
+        <option value="electricityHeating"> radiateur Electrique</option>
+        </select>
+        <br>
+<! ____________________________________________________
+Questions Spécificités du bâtiment>
+<h2> les spécificités du bâtiment</h2>
+        <label for="badSoil"> Votre bâtiment fait-il l'objet de renforcement de sol ?</label>
+        <select id="selectSoilReinforcement">
+        <option value="no"> non</option>
+        <option value="yes"> oui</option>
+        </select>
+        <br>
+        <br>
+        <label for="partitionInside">Il y a t'il une cloison de recoupement dans le hall ? (cloison toute hauteur qui sépare le volume):</label>
+        <select id="selectPartitionInside">
+            <option value="no"> non</option>
+            <option value="yes"> oui</option>
+        </select>
+            <label for="inputPartitionInside">si oui indiquez le Nombre: </label>
+            <input type="text" id="inputPartitionInside" name="partitionInside" placeholder="indiquez le nombre" > unité(s)
+        <br>
+        <br>
+        <label for="overHeadCrane"> Etes-vous équipés en pont roulant ?</label>
+        <select id="choiceOverHeadCrane">
+            <option value="no"> non</option>
+            <option value="yes"> oui</option>
+        </select>
+        <br>
+        <br>
+        <label for="dockShelter"> Etes-vous équipés en quais de déchargement ?:</label>
+        <select id="choiceDockShelter">
+            <option value="no"> non</option>
+            <option value="yes"> oui</option>
+        </select>
+        <br>
+        <label for="numberDockShelter">Si oui Combien de quai ?: </label>
+        <input type="text" id="numberDockShelter" name="dockShelter" placeholder="indiquez le nombre" > unité(s)
+        <br>
+        <br>
+        <label for="sectionalDoors"> Etes-vous équipés en porte d'accés de plein pied ?( porte sectionnelle grande dimension pour entrée véhicule):</label>
+        <select id="choiceSectionalDoors">
+            <option value="no"> non</option>
+            <option value="yes"> oui</option>
+        </select>
+        <br>
+        <label for="numberFloorSectionalDoor">Si oui Combien de Porte sectionnelles ?: </label>
+        <input type="text" id="numberFloorSectionalDoor" name="sectionalDoors" placeholder="indiquez le nombre" > unité(s)
+        <br>
+        <br>
+        <label for="storageOutdoor"> Avez-vous une cour de stockage ? :</label>
+        <select id="choiceStorageOutdoor">
+            <option value="no"> non</option>
+            <option value="yes"> oui</option>
+        </select>
+        <br>
+        <label for="areaRoadAndUtilitiesStorageOutdoor">Si oui,  Quelle est sa surface ?: </label>
+        <input type="text" id="areaRoadAndUtilitiesStorageOutdoor" name="StorageOutdoor" placeholder="indiquez la surface" > m²
+        <br>
+        <br>
+        <label for="electricity"> Quel sont le(s) type(s) de compteur(s) électrique(s) installé(s) ?:</label>
+        <br>
+        <input type="checkbox" id="choiceBlueRate" name="blueRate">
+        <label for="choiceBlueRate"> tarif Bleu < à 36 kVA (~36kW)</label>
+        <label for="inputBlueRate"> / indiquez le Nombre: </label>
+        <input type="text" id="inputBlueRate" name="BlueRate" placeholder="indiquez le nombre" > unité(s)
+        <br>
+        <input type="checkbox" id="choiceYellowRate" name="yellowRate">
+        <label for="choiceYellowRate"> tarif Jaune > à 36 kVA (~36kW) et < à 250 kVA (~250kW)</label>
+        <label for="inputYellowRate"> /indiquez le Nombre: </label>
+        <input type="text" id="inputYellowRate" name="YellowRate" placeholder="indiquez le nombre" > unité(s)
+        <br>
+        <input type="checkbox" id="choiceGreenRate" name="greenRate">
+        <label for="choiceGreenRate"> tarif Vert > à 250 kVA (~250kW) </label>
+        <br>
+        <br>
+        <label for="heating">chauffer-vous le Hall (solution aérothermes gaz) ?:</label>
+        <select id="selectHeatingHall">
+            <option value="no"> non</option>
+            <option value="yes"> oui</option>
+        </select>
+        <br>
+        <br>
+        <label for="fireNetwork">Le hall est équipé d'un RIA (Réseau Incendie Armé) ?:</label>
+        <select id="selectFireNetworkHall">
+            <option value="no"> non</option>
+            <option value="yes"> oui</option>
+        </select>
+        <br>
+        <br>
+        <label for="openSpace">Les bureaux possédent des Espaces ouverts ? (type Open Space des salariés, Show room, atelier….):</label>
+        <select id="selectOpenSpace">
+            <option value="no"> non</option>
+            <option value="yes"> oui</option>
+        </select>
+        <br>
+        <br>
+        <label for="panel">Les bureaux sont équipés d'un bardage haut de gamme (révetement bois, cassettes, véture) ?:</label>
+        <select id="selectPanelOffices">
+            <option value="no"> non</option>
+            <option value="yes"> oui</option>
+        </select>
+        <br>
+        <br>
+        <label for="elevator">Les bureaux sont équipés d'un ascenseur ?:</label>
+        <select id="choiceElevator">
+            <option value="no"> non</option>
+            <option value="yes"> oui</option>
+        </select>
+<! ____________________________________________________
+Administratif, fonctionnement du chantier et taxes>
+<h2> Fonctionnement du chantier et admnistratif, taxes et assurances </h2>
+        <label for="projectAllIn"> Votre bâtiment fait-il l'objet d'une offre "clefs en main" ( c'est a dire tout compris) ? en d'autres termes, les études,le dossier PC, les controles technique, branchements (électrique, eau...) sont-ils compris dans votre offre ?</label>
+        <select id="choiceAllIn">
+            <option value="yes"> oui</option>
+            <option value="no"> non</option>
+        </select><br>
+        <br>
+        <label for="FeeBuildingPermit"> Votre offre comprend elle le dépôt du permis de construire et le paiement de ses taxes ?</label>
+        <select id="choiceFeeBuildingPermit">
+            <option value="yes"> oui</option>
+            <option value="no"> non</option>
+        </select><br>
+        <br>
+        <label for="projectInsurance"> votre offre est elle bien assurée en Dommage Ouvrage (garantie de la réparation des travaux en cas de défaut de l'entreprise)</label>
+        <select id="choiceInsurance">
+            <option value="yes"> oui</option>
+            <option value="no"> non</option>
+        </select><br>
+        <br>
+        <label for="projectManagement"> Votre bâtiment fait-il l'objet d'un suivi des travaux? c'est à dire Maitre d'Oeuvre assuré</label>
+        <select id="choiceManagement">
+            <option value="yes"> oui</option>
+            <option value="no"> non</option>
+        </select> <br>
+        <br>
+        <label for="projectBusinessAgency"> Avez-vous fait appel à une agence commerciale ?</label>
+        <select id="choiceBusinessAgency">
+            <option value="yes"> oui</option>
+            <option value="no"> non</option>
+        </select> <br>
+        <br>
+        <label for="projectDevelopper"> L'offre émane t'elle d'une entreprise "promoteur" : bâtiment clef en main ?</label>
+        <select id="choiceDevelopper">
+            <option value="yes"> oui</option>
+            <option value="no"> non</option>
+        </select><br>
+        <br>
+
+
+
+
+
+<! ____________________________________________________
+Validation et retour à l'accueil>
+        <br>
+        <!-- bouton retour à l'accueil  -->
+        <div class="button1">
+            <input type="button" value="Retour à l'Accueil" onclick=window.location.href="http://127.0.0.1:5500/index.html" />
+            </div>
+        
+        <!-- bouton valider  -->
+        <div class="button2">
+            <button type="submit" onclick="costBreakdown()">valider les réponses</button>
+            </div>
+
+
+
+</section>
+
+    <script src="\javascript\analysedecout.js"></script>
+</body>
+</html>

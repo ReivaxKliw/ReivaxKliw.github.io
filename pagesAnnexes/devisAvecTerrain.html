@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faire un devis quand on connait le prix du terrain</title>
+    <link rel="stylesheet" href="\style\devis.css">
+</head>
+<body>
+
+<h1>devisAvecTerrain.html</h1>
+<!-- ---------------------- -->
+
+<!-- METHODE avec onclick pour récupération des données -->
+<label for="areaGround">Quelle est la surface de votre terrain:</label>
+<input type="text" placeholder="surface en m²" id="areaGround"> m² <br>
+
+<label for="areaBuilding">Quelle est la surface du bâtiment projeté:</label>
+<input type="text" placeholder="surface en m²" id="areaBuilding"> m² <br>
+
+<label for="heightBuilding">Quelle est la hauteur du bâtiment projeté:</label>
+<input type="text" placeholder="hauteur en m" id="heightBuilding"> m <br>
+
+<label for="workers">Combien de personnes travaillent sur le site:</label>
+<input type="text" placeholder="nombre" id="workers"> personnes <br>
+<label for="clercks">dont :</label>
+<input type="text" placeholder="nombre" id="clercks"> dans les bureaux <br>
+
+    <button type="button" onclick="getAreas();">Valider</button>
+
+    <script src="./devis.js"></script>
+</body>
+</html>
