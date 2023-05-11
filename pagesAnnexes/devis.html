@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="\style\annexes.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="logo"><a href="#">AMO : le site des maîtres d'ouvrage</a>  </li>
+                <li><a href="#contact">Nous contacter</a>  </li>
+                <li><a href="#s'identifier">s'identifier</a>  </li>
+            </ul>
+        </nav>
+    </header>
+<!-- Affichage de la question sur la propriété du terrain -->
+<section id="imagePrincipale">
+<!-- <section id="mainQuestions">   -->
+    <form name="questionOwner" id="formulaire1">
+        <label for="ground"><strong>Je connais le terrain pour ma construction et donc sa surface et son prix :</strong></label>
+          <br>
+          <input type="radio" id="choice1" name="q1" value="yes" onclick="selectGround()">
+          <label for="choice1">Oui</label>
+          <br>
+          <input type="radio" id="choice2" name="q1" value="no" onclick="selectGround()">
+          <label for="choice2">Non</label>
+          <br>
+      </form>
+      <! ____________________________________________________
+Validation et retour à l'accueil>
+        <br>
+        <!-- bouton retour à l'accueil  -->
+        <div class="button1">
+            <input type="button" value="Retour à l'Accueil" onclick=window.location.href="http://127.0.0.1:5500/index.html" />
+            </div>
+ <!-- bouton valider  -->
+        <div class="button">
+        <button type="submit" onclick="redirectionGround()">valider la réponse</button>
+        </div>
+</section>
+  
+    <script src="\javascript\devis.js"></script>
+</body>
+</html>
